@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Golf Training</title>
+  <meta name="description" content="Log golf practice sessions and drill scores, and see how your game is moving.">
+
+  <meta name="theme-color" content="#EEF2EC" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E1712" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Golf">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow+Semi+Condensed:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="view" class="view" tabindex="-1"></main>
+
+  <nav class="tabbar" id="tabbar" aria-label="Main">
+    <a href="#/today" data-tab="today">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 21V3.5l10 4-10 4"/><path d="M4 21h9"/></svg>
+      <span>Today</span>
+    </a>
+    <a href="#/history" data-tab="history">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M8 8.5h8M8 12h8M8 15.5h5"/></svg>
+      <span>History</span>
+    </a>
+    <a href="#/progress" data-tab="progress">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5h17"/><path d="M5 16l4.5-5 3.5 3 6-7"/></svg>
+      <span>Progress</span>
+    </a>
+    <a href="#/setup" data-tab="setup">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
+      <span>Setup</span>
+    </a>
+  </nav>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
